@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3709A248-2550-4BCC-9FD6-6DEBD6AB65A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CourseWorkOOP_Dmitry_</RootNamespace>
+    <AssemblyName>CourseWorkOOP%28Dmitry%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="ControllingFocusOfMenuItems.cs" />
+    <Compile Include="ControllingScaleOfFormComponents.cs" />
+    <Compile Include="ControllingThemeOfFormComponents.cs" />
+    <Compile Include="DifficultyLevel.cs" />
+    <Compile Include="FastDino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastDino.Designer.cs">
+      <DependentUpon>FastDino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastDinoGame.cs" />
+    <Compile Include="GameRecords.cs" />
+    <Compile Include="MenuOfControlledItems.cs" />
+    <Compile Include="ModificationСomponents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FastDino.resx">
+      <DependentUpon>FastDino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Light_ActiveSelect.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_АктивныйВыбор.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_Кнопка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПустойВыбор.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ТекущийВыбор.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_Тема.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_Шип.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_АктивныйВыбор.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ПустойВыбор.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ТекущийВыбор.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_Тема.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_Шип.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_Кнопка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_Закрыть.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_Закрыть.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ОкноПрограммы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ОкноПрограммы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_МенюИгровогоПроцесса.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_МенюИгровогоПроцесса.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ФонИгры.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ФонИгры.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПерсонажДвижение1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Иконка.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПерсонажПрисяд2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПерсонажПрисяд3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПерсонажДвижение1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПерсонажДвижение2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПерсонажДвижение3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_ПерсонажПрисяд1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ПерсонажДвижение1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ПерсонажДвижение2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ПерсонажДвижение3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ПерсонажПрисяд1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ПерсонажПрисяд2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_ПерсонажПрисяд3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_МонеткаДвижение1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_МонеткаДвижение2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_МонеткаДвижение3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_МонеткаДвижение4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмная_МонеткаДвижение5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_МонеткаДвижение3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_МонеткаДвижение4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_МонеткаДвижение5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_МонеткаДвижение1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Светлая_МонеткаДвижение2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
